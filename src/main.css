@@ -30,38 +30,3 @@ h3 {
 p {
     color: black;
 }
-
-#pom-pic {
-    width: 600px;
-    margin: 10px 20px 5px 10px;
-    border: 1px;
-    padding: 10px 40px 5px 10px;
-}
-
-label {
-    display: block;
-    text-align: center;
-    float: inline-start;
-    text-decoration: underline;
-}
-
-.list {
-    display: inline-block;
-    text-align: left;
-}
-
-button {
-    background-color: #544923;
-    color: #FFEEDB;
-    width: 100px;
-    height: 40px;
-    border: 1px black;
-}
-
-.hidden {
-    display: none;
-}
-
-#succeed, #fail {
-    width: 100px;
-}
