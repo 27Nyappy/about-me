@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond');
+
 body {
     text-align: center;
     font-stretch: expanded;
     background-color: #FFEEDB;
+    font-family: 'EB Garamond', serif;
+}
+
+.heading {
+    font-family: 'Helvetica', sans-serif;
 }
 
 h1 {
@@ -11,12 +18,17 @@ h1 {
 
 h2 {
     color: #4D2711;
-    background-color: burlywood
+    background-color: rgb(221, 202, 177);
 }
 
 h3 {
     color: #544923;
-    text-decoration: underline
+    text-decoration: underline;
+    background-color: rgb(238, 208, 169);
+}
+
+p {
+    color: black;
 }
 
 #pom-pic {
@@ -24,6 +36,13 @@ h3 {
     margin: 10px 20px 5px 10px;
     border: 1px;
     padding: 10px 40px 5px 10px;
+}
+
+label {
+    display: block;
+    text-align: center;
+    float: inline-start;
+    text-decoration: underline;
 }
 
 .list {
