@@ -1,0 +1,40 @@
+body {
+    text-align: center;
+    font-stretch: expanded;
+    background-color: #FFEEDB;
+}
+
+h1 {
+    color: #7A1619;
+    background-color: blanchedalmond
+}
+
+h2 {
+    color: #4D2711;
+    background-color: burlywood
+}
+
+h3 {
+    color: #544923;
+    text-decoration: underline
+}
+
+#pom-pic {
+    width: 600px;
+    margin: 10px 20px 5px 10px;
+    border: 1px;
+    padding: 10px 40px 5px 10px;
+}
+
+.list {
+    display: inline-block;
+    text-align: left;
+}
+
+button {
+    background-color: #544923;
+    color: #FFEEDB;
+    width: 100px;
+    height: 40px;
+    border: 1px black;
+}
