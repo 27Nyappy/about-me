@@ -57,3 +57,11 @@ button {
     height: 40px;
     border: 1px black;
 }
+
+.hidden {
+    display: none;
+}
+
+#succeed, #fail {
+    width: 100px;
+}
