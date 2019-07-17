@@ -17,7 +17,38 @@
     </header>
 
     <main>
+        <section>
+                <h2 class="heading">How to Play the Game?</h2>
+                <p class="game-rules">
+                    You have four chances to guess a number between
+                    1 and 20(1 and 20 are considered options as well).
+                    The game will let you know if your guess was too
+                    high or too low. If you guess correct, or use up
+                    your guesses, the game will end.
+                </p>
+        </section>
 
+        <section>
+            <h3>Please input your number guess below</h3>
+            <input id="user-input" type="number" min="1" max="20">
+            <button id="guess-button">Submit Guess</button>
+        </section>
+
+        <section>
+            <label>
+                Number of tries remainig: <span id="remaining-tries">4</span>
+            </label>
+        </section>
+
+        <section>
+            <span id="too-high-low"></span>   
+        </section>
+
+        <section>
+            <label>
+                Are you a Winner or Loser? <span id="win-or-lose"></span>
+            </label>
+        </section>
     </main>
 
     <script type="module" src="src/guess.js"></script>
