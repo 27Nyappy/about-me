@@ -15,6 +15,53 @@
         <a href="/guess.html">Guess a Number</a>
         <a href="./rps.html">Rock, Paper, Scissors</a>
     </header>
+
+    <main>
+        <section>
+            <h1>Let's Play Rock, Paper, Scissors!</h1>
+
+            <p>
+                Choose between rock, paper or scissors below to 
+                play against the computer!
+            </p>
+
+            <label>
+                <img id="rock-img" class="radio-img" src="./assets/rock.png">
+                <input id="rock" type="radio" name="throw">
+            </label>
+
+            <label>
+                <img id="paper-img" class="radio-img" src="./assets/paper.png">
+                <input id="paper" type="radio" name="throw">
+            </label>
+            
+            <label>
+                <img id="scissors-img" class="radio-img" src="assets/scissors.png">
+                <input id="scissors" type="radio" name="throw">
+            </label>
+
+        </section>
+
+        <section>
+            <label>
+                <button id="play">PLAY!</button>
+            </label>
+        </section>
+
+        <section>
+            <span>Are you a winner or loser?</span>
+        </section>
+
+        <section>
+            <label class="winlose">
+                Wins: <span id="wins">0</span>
+            </label>
+            <label class="winlose">
+                Losses: <span id="losses">0</span>
+            </label>
+        </section>
+    </main>
+
     <script type="module" src="src/get-throw.js"></script>  
 </body>
 </html>

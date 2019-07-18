@@ -1,0 +1,18 @@
+img {
+    width: 150px;
+}
+
+.radio-img, button {
+    cursor: pointer;
+}
+
+button {
+    margin: 40px;
+    width: 100px;
+    height: 50px;
+    font-size: 12pt;
+}
+
+.winlose {
+    padding: 10px;
+}
