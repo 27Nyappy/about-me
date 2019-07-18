@@ -27,17 +27,17 @@
 
             <label>
                 <img id="rock-img" class="radio-img" src="./assets/rock.png">
-                <input id="rock" type="radio" name="throw">
+                <input type="radio" name="hand" value="Rock" checked>
             </label>
 
             <label>
                 <img id="paper-img" class="radio-img" src="./assets/paper.png">
-                <input id="paper" type="radio" name="throw">
+                <input type="radio" name="hand" value="Paper">
             </label>
             
             <label>
                 <img id="scissors-img" class="radio-img" src="assets/scissors.png">
-                <input id="scissors" type="radio" name="throw">
+                <input type="radio" name="hand" value="Scissors">
             </label>
 
         </section>
@@ -49,19 +49,19 @@
         </section>
 
         <section>
-            <span>Are you a winner or loser?</span>
+            <span id="win-lose">Are you a winner or loser?</span>
         </section>
 
         <section>
-            <label class="winlose">
+            <label class="win-lose-tally">
                 Wins: <span id="wins">0</span>
             </label>
-            <label class="winlose">
+            <label class="win-lose-tally">
                 Losses: <span id="losses">0</span>
             </label>
         </section>
     </main>
 
-    <script type="module" src="src/get-throw.js"></script>  
+    <script type="module" src="src/rps.js"></script>  
 </body>
 </html>
