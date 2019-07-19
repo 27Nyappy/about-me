@@ -16,3 +16,7 @@ button {
 .win-lose-tally {
     padding: 10px;
 }
+
+input {
+    display: none;
+}

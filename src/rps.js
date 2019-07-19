@@ -14,45 +14,23 @@ let losses = 0;
 playButton.addEventListener('click', () => {
     //retrieving getThrow function to play against computer
     const hand = getThrow();
-
-    const handButton = document.querySelector('input:checked');
+    const handThrow = document.querySelector('input:checked');
 
     //setting parameters for game
-    const tie = handButton.value === hand;
-    const win1 = handButton.value === 'Rock' && hand === 'Scissors';
-    const win2 = handButton.value === 'Paper' && hand === 'Rock';
-    const win3 = handButton.value === 'Scissors' && hand === 'Paper';
-    const lose1 = handButton.value === 'Rock' && hand === 'Paper';
-    const lose2 = handButton.value === 'Paper' && hand === 'Scissors';
-    const lose3 = handButton.value === 'Scissors' && hand === 'Rock';
-
+    const tie = handThrow.value === hand;
+    const win = handThrow.value === 'Rock' && hand === 'Scissors' || handThrow.value === 'Paper' && hand === 'Rock' || handThrow.value === 'Scissors' && hand === 'Paper';
+    const lose = handThrow.value === 'Rock' && hand === 'Paper' || handThrow.value === 'Paper' && hand === 'Scissors' || handThrow.value === 'Scissors' && hand === 'Rock';
+    
     //output of game result and update scores
     if(tie) {
         winLose.textContent = 'It\'s a tie. Throw again.';
     }
-    else if(win1) {
+    else if(win) {
         winLose.textContent = 'It\'s a win. Throw again.';
         winsDisplay.textContent = wins++;
     }
-    else if(win2) {
-        winLose.textContent = 'It\'s a win. Throw again.';  
-        winsDisplay.textContent = wins++;
-    }
-    else if(win3) {
-        winLose.textContent = 'It\'s a win. Throw again.';
-        winsDisplay.textContent = wins++;
-    }
-    else if(lose1) {
+    else if(lose) {
         winLose.textContent = 'It\'s a loss. Throw again.';
         lossesDisplay.textContent = losses++;
-    }
-    else if(lose2) {
-        winLose.textContent = 'It\'s a loss. Throw again.';  
-        lossesDisplay.textContent = losses++;
-    }
-    else if(lose3) {
-        winLose.textContent = 'It\'s a loss. Throw again.';
-        lossesDisplay.textContent = losses++;
-    }
-    
+    } 
 });
