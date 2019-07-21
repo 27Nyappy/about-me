@@ -29,7 +29,7 @@ quizButton.onclick = function() {
     // converts to boolean and records user answer
     const correctQuestionOne = true;
     if(isYes(questionOne) === correctQuestionOne) {
-        answers++;
+        answers += 1;
     }
 
     // get user response for second question
@@ -38,7 +38,7 @@ quizButton.onclick = function() {
     // convert to boolean and record user answer
     const correctQuestionTwo = false;
     if(isYes(questionTwo) === correctQuestionTwo) {
-        answers++;
+        answers += 1;
     }
 
     // get user response for third question
@@ -47,7 +47,7 @@ quizButton.onclick = function() {
     // convert to boolean and record user answer
     const correctQuestionThree = true;
     if(isYes(questionThree) === correctQuestionThree) {
-        answers++;
+        answers += 1;
     } 
 
     // alerting user quiz is over

@@ -2,3 +2,25 @@
     padding: 0px 150px;
 }
 
+input, button {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+input {
+    width: 50px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px ridge white;
+}
+
+button {
+    width: 100px;
+    height: 50px;
+    font-size: 12pt;
+    border-radius: 5px;
+}
+
+section {
+    font-size: 14pt;
+}

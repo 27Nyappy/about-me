@@ -1,9 +1,18 @@
 img {
     width: 150px;
+    border-radius: 16px;
 }
 
 .radio-img, button {
     cursor: pointer;
+}
+
+input:checked + .radio-img {
+    border-color: rgb(201, 62, 7);
+}
+
+.radio-img {
+    border: 3px solid rgb(65, 54, 41);
 }
 
 button {
@@ -13,10 +22,29 @@ button {
     font-size: 12pt;
 }
 
-.win-lose-tally {
-    padding: 10px;
-}
-
 input {
     display: none;
+}
+
+span, label {
+    font-size: 14pt;
+}
+
+#rock-img {
+        border: 3px solid rgb(65, 54, 41);
+        width: 100px;
+}
+
+#paper-img {
+    border: 3px solid rgb(65, 54, 41);
+    width: 100px;
+}
+
+#scissors-img {
+    border: 3px solid rgb(65, 54, 41);
+    width: 100px;
+}
+
+.hidden {
+    visibility: hidden;
 }

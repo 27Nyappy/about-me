@@ -26,18 +26,18 @@
             </p>
 
             <label>
-                <img id="rock-img" class="radio-img" src="./assets/rock.png">
-                <input type="radio" name="hand" value="Rock" checked>
+                <input type="radio" name="hand" value="Rock">
+                <img class="radio-img" src="./assets/Rock.png">
             </label>
 
             <label>
-                <img id="paper-img" class="radio-img" src="./assets/paper.png">
-                <input type="radio" name="hand" value="Paper">
+                <input type="radio" name="hand" value="Paper" checked>
+                <img class="radio-img" src="./assets/Paper.png">
             </label>
             
             <label>
-                <img id="scissors-img" class="radio-img" src="assets/scissors.png">
                 <input type="radio" name="hand" value="Scissors">
+                <img class="radio-img" src="assets/Scissors.png">
             </label>
 
         </section>
@@ -46,10 +46,13 @@
             <label>
                 <button id="play">PLAY!</button>
             </label>
+            <span id="win-lose">Are you a winner or loser?</span>
         </section>
 
         <section>
-            <span id="win-lose">Are you a winner or loser?</span>
+                <img id="rock-img" class="hidden" src="./assets/Rock.png">
+                <img id="paper-img" class="hidden" src="./assets/Paper.png">
+                <img id="scissors-img" class="hidden" src="assets/Scissors.png">
         </section>
 
         <section>

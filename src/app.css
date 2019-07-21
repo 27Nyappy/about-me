@@ -1,7 +1,6 @@
 #pom-pic {
-    width: 600px;
+    width: 50%;
     margin: 10px 20px 5px 10px;
-    border: 1px;
     padding: 10px 40px 5px 10px;
 }
 
@@ -10,19 +9,19 @@ label {
     text-align: center;
     float: inline-start;
     text-decoration: underline;
+    font-size: 14pt;
 }
 
 .list {
     display: inline-block;
-    text-align: left;
+    font-size: 14pt;
+    list-style-type: none;
 }
 
 button {
-    background-color: #544923;
-    color: #FFEEDB;
     width: 100px;
     height: 40px;
-    border: 1px black;
+    font-size: 12pt;
 }
 
 .hidden {
@@ -30,5 +29,5 @@ button {
 }
 
 #succeed, #fail {
-    width: 100px;
+    width: 15%;
 }

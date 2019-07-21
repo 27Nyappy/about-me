@@ -5,6 +5,9 @@ const playButton = document.getElementById('play');
 const winsDisplay = document.getElementById('wins');
 const lossesDisplay = document.getElementById('losses');
 const winLose = document.getElementById('win-lose');
+const rockImg = document.getElementById('rock-img');
+const paperImg = document.getElementById('paper-img');
+const scissorsImg = document.getElementById('scissors-img');
 
 // defining variables for tally
 let wins = 0;
@@ -15,6 +18,10 @@ playButton.addEventListener('click', () => {
     //retrieving getThrow function to play against computer
     const hand = getThrow();
     const handThrow = document.querySelector('input:checked');
+
+    paperImg.classList.remove('hidden');
+    const src = 'assets/' + hand + '.png';
+    paperImg.src = src;
 
     //setting parameters for game
     const tie = handThrow.value === hand;
@@ -27,10 +34,12 @@ playButton.addEventListener('click', () => {
     }
     else if(win) {
         winLose.textContent = 'It\'s a win. Throw again.';
-        winsDisplay.textContent = wins++;
+        wins++;
+        winsDisplay.textContent = wins;
     }
     else if(lose) {
         winLose.textContent = 'It\'s a loss. Throw again.';
-        lossesDisplay.textContent = losses++;
+        losses++;
+        lossesDisplay.textContent = losses;
     } 
 });
