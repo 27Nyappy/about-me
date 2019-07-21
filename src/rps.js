@@ -5,9 +5,7 @@ const playButton = document.getElementById('play');
 const winsDisplay = document.getElementById('wins');
 const lossesDisplay = document.getElementById('losses');
 const winLose = document.getElementById('win-lose');
-const rockImg = document.getElementById('rock-img');
 const paperImg = document.getElementById('paper-img');
-const scissorsImg = document.getElementById('scissors-img');
 
 // defining variables for tally
 let wins = 0;
