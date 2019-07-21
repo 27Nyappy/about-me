@@ -1,0 +1,33 @@
+#pom-pic {
+    width: 50%;
+    margin: 10px 20px 5px 10px;
+    padding: 10px 40px 5px 10px;
+}
+
+label {
+    display: block;
+    text-align: center;
+    float: inline-start;
+    text-decoration: underline;
+    font-size: 14pt;
+}
+
+.list {
+    display: inline-block;
+    font-size: 14pt;
+    list-style-type: none;
+}
+
+button {
+    width: 100px;
+    height: 40px;
+    font-size: 12pt;
+}
+
+.hidden {
+    display: none;
+}
+
+#succeed, #fail {
+    width: 15%;
+}
