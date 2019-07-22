@@ -23,8 +23,8 @@ playButton.addEventListener('click', () => {
 
     //setting parameters for game
     const tie = handThrow.value === hand;
-    const win = handThrow.value === 'Rock' && hand === 'Scissors' || handThrow.value === 'Paper' && hand === 'Rock' || handThrow.value === 'Scissors' && hand === 'Paper';
-    const lose = handThrow.value === 'Rock' && hand === 'Paper' || handThrow.value === 'Paper' && hand === 'Scissors' || handThrow.value === 'Scissors' && hand === 'Rock';
+    const win = handThrow.value === 'rock' && hand === 'scissors' || handThrow.value === 'paper' && hand === 'rock' || handThrow.value === 'scissors' && hand === 'paper';
+    const lose = handThrow.value === 'rock' && hand === 'paper' || handThrow.value === 'paper' && hand === 'scissors' || handThrow.value === 'scissors' && hand === 'rock';
     
     //output of game result and update scores
     if(tie) {

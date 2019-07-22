@@ -2,13 +2,13 @@
 // This is testing function, returns rock, paper or scissors
 export function getThrowFromNumber(randomNumber) {
     if(randomNumber === 0){
-        return 'Rock';
+        return 'rock';
     }
     else if(randomNumber === 1){
-        return 'Paper';
+        return 'paper';
     }
     else if(randomNumber === 2){
-        return 'Scissors';
+        return 'scissors';
     }
 }
 
