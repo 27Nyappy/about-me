@@ -18,7 +18,7 @@ playButton.addEventListener('click', () => {
     const handThrow = document.querySelector('input:checked');
 
     paperImg.classList.remove('hidden');
-    const src = '../assets/' + hand + '.png';
+    const src = './assets/' + hand + '.png';
     paperImg.src = src;
 
     //setting parameters for game
