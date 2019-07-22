@@ -6,7 +6,7 @@ test('returns rock when throw is 0', (assert) => {
     // Arrange
     const randomNumber = 0;
 
-    const expected = 'Rock';
+    const expected = 'rock';
 
     // Act
     const result = getThrowFromNumber(randomNumber);
@@ -19,7 +19,7 @@ test('returns paper when throw is 1', (assert) => {
     // Arrange
     const randomNumber = 1;
 
-    const expected = 'Paper';
+    const expected = 'paper';
 
     // Act
     const result = getThrowFromNumber(randomNumber);
@@ -32,7 +32,7 @@ test('returns scissors when throw is 2', (assert) => {
     // Arrange
     const randomNumber = 2;
 
-    const expected = 'Scissors';
+    const expected = 'scissors';
 
     // Act
     const result = getThrowFromNumber(randomNumber);
